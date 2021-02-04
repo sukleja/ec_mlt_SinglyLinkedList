@@ -77,20 +77,23 @@ if __name__ == '__main__':
     for word in linked_list.iter():
         print(word)
 
-    print(linked_list.get_size())
-
+    print(f"Size of list: {linked_list.get_size()}\n")
+    print("Deleting second entry")
     linked_list.delete("second")
 
     for word in linked_list.iter():
         print(word)
 
-    print(linked_list.get_size())
+    print(f"Size of list: {linked_list.get_size()}\n")
+    print("Searching for fourth entry")
     print(linked_list.search("fourth"))
+    print("Searching for 'test' entry")
     print(linked_list.search("test"))
-
+    print("\n")
+    print("Clearing list")
     linked_list.clear()
 
     for word in linked_list.iter():
         print(word)
 
-    print(linked_list.get_size())
+    print(f"Size of list: {linked_list.get_size()}")
