@@ -25,7 +25,7 @@ class SinglyLinkedList:
             current.next = node
         self.size += 1
 
-    # iterator explain yield?
+    #generator function to encapsulate the node objects
     def iter(self):
         current = self.head
         while current:
@@ -34,15 +34,13 @@ class SinglyLinkedList:
             yield val
 
     def get_size(self):
-        size = self.size
-        return size
+        return self.size
 
 
 #############################################################################################
 # In class part #############################################################################
 
     def clear(self):
-        self.head = None
         self.head = None
         self.size = 0
 
